@@ -14,3 +14,4 @@ alert(("" == false) == 221);
 alert(3 + 4 * 5); alert(5 && "bonjour");
 alert("bonjour" || 5);
 alert((0 + undefined) ? "0" + undefined : 0 + undefined);
+alert("Salut");
