@@ -1,0 +1,81 @@
+.enonce {
+    font-family: Verdana, Courier, monospace;
+	font-size: 12px;
+	color: #000000; 
+	background-color:#EFFEFF;
+	border:2px solid #6495ed;
+	padding:12px;
+	padding-top:1px;
+	padding-bottom:1px;
+	width: 732px;
+	text-align: left;
+	margin-bottom:3px;
+}
+.enonce .titre{
+	font-family: "Comic sans MS",  Courier, monospace;
+	font-size: 16px;
+	text-align:center;
+	color: #0000FF; 
+	}
+table {
+border:3px solid #6495ed;
+border-collapse:collapse;
+margin:auto;
+}
+caption, tfoot{
+border:2px solid #FF00FF;;
+padding:2px;
+background-color:#FFFFDD;
+color:#1B56D8;
+font-family: "Comic sans MS",  Courier, monospace;
+	font-size: 16px;
+	text-align:center;
+	font-weight:bold;
+}
+th {
+font-family:monospace;
+border:1px dotted #6495ed;
+padding:5px;
+background-color:#EFF6FF;
+color:#6495ed;
+}
+td {
+font-family:sans-serif;
+font-size:80%;
+border:1px solid #6495ed;
+padding:5px;
+}
+#logo
+{
+   width: 760px;
+   height: 50px;
+   background-image: url("../images/logo.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+}
+fieldset {
+background-color:#EFF6FF;
+	width: 760px;
+	
+border:3px solid #6495ed;
+padding:5px;
+}
+legend {
+font-family:sans-serif;
+font-size:120%;
+color:#6495ed;
+font-weight:bold;
+}
+input {
+background-color:#FFFFBB;
+color:#84004A;
+font-family:Verdana;
+}
+.commentaire {
+font-family:"Comic Sans MS";
+font-size:60%;
+color:#000088;
+background-color:#FFFFBB;
+border:3px solid #6495ed;
+padding:5px;
+}

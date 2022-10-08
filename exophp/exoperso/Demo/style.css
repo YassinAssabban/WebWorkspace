@@ -1,0 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+}
+
+.menu-main-container{
+    width: 25%;
+    height: 30px;
+    background-color: rgb(161, 161, 161);
+}
+
+.body-main-container{
+    width: 25%;
+    height: 35px;
+    background-color: grey;
+}
+
+.sousMenu-main-container{
+    width: 25%;
+    height: 40px;
+    background-color: rgb(159, 159, 159);
+}
+
+.lastSousMenu-main-container{
+    width: 25%;
+    height: 45px;
+    background-color: rgb(106, 103, 103);
+}

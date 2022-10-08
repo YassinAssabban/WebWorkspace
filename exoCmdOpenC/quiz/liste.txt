@@ -1,0 +1,10 @@
+total 21
+drwxr-xr-x 1 yassi 197609    0 sept. 13 03:40 ./
+drwxr-xr-x 1 yassi 197609    0 sept. 13 03:32 ../
+drwxr-xr-x 1 yassi 197609    0 sept. 13 03:32 2019/
+-rw-r--r-- 1 yassi 197609   50 juin  27  2019 fichier.txt
+-rw-r--r-- 1 yassi 197609 7578 mai    9  2019 image.png
+-rw-r--r-- 1 yassi 197609    0 sept. 13 03:40 liste.txt
+-rw-r--r-- 1 yassi 197609 5907 mai   16  2019 lorem.txt
+drwxr-xr-x 1 yassi 197609    0 juin  28  2019 test/
+-rw-r--r-- 1 yassi 197609    0 juin  28  2019 test2

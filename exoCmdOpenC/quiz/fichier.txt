@@ -1,0 +1,2 @@
+Ceci est un fichier. 
+Le terminal, c'est facile !
