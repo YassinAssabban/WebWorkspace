@@ -1,20 +1,23 @@
-function Personne(nom, prenom, dateBorn) {
+function Personne(nom, prenom, anneeBorn) {
     this.nom = nom;
     this.prenom = prenom;
     this.anneeBorn = anneeBorn;
 
-    this.age = function(anneeBorn) {
-        let Date = new Date.getFullYear();
-
-        return Date - anneeBorn;
+    this.age = function(annee) {
+        //let Date = new Date.getFullYear();
+        return annee - anneeBorn;
     };
 
     Personne.prototype.toString = function() {
-        return "Je suis " + this.prenom + " " + this.nom + "Né en " + age;
+        return "Je suis " + this.prenom + " " + this.nom + "Né en " + this.anneeBorn;
     };
 }
 
 
 
 let person = new Personne("Assabban", "Yassin", 1999);
-alert(person.toString);
+console.log(person);
+alert(person);
+console.log(person.age(2019));
+let person2 = new Personne("Alary", "Philippe");
+alert(person2);

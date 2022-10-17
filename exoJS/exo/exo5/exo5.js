@@ -1,24 +1,25 @@
 let Personne = {
-    prenom : "Yassin",
+    prenom : "Marc",
     papa : {
-        prenom : "nomPere",
-        grandMere : {
-            prenom : "nomGrandMere",
+        prenom : "Benoit",
+        maman : {
+            prenom : "Régine",
         },
-        grandPere : {
-            prenom : "nomGrandPere",
+        papa : {
+            prenom : "George",
         },
     },
     maman : {
-        prenom : "nomMere",
-        grandMere : {
-            prenom : "nomGrandMere",
+        prenom : "Catherine",
+        maman : {
+            prenom : "Lucie",
         },
-        grandPere : {
-            prenom : "nomGrandPere",
+        papa : {
+            prenom : "René",
         },
     }
 
-    
 }
-    alert("Bonjour" + " " + Personne.maman.grandMere.prenom);
+
+
+    console.log(Personne.maman.grandMere.prenom);
