@@ -1,0 +1,33 @@
+/* body{
+    margin: 0;
+    padding: 0;
+}
+*/ 
+
+
+.navbar {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: lightgray;
+    width: 100%;
+    border: 2px solid grey;
+    justify-content: space-around;
+}
+
+.affichRgb{
+    float: right;
+}
+
+button{
+    padding: 10px 5px;
+    border: none;
+    background-color: lightgray;
+}
+
+input{
+    border: none;
+    background-color: lightgray;
+    width: 125px;
+}

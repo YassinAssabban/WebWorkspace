@@ -5,10 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Colors</title>
+    <link rel="stylesheet" href="style.css">
     <script src="exo9.js" async></script>
 </head>
-<body>
-    <input type="text" id="combienDePlus">
+<div>
+    <div class="navbar">
+    <input type="number" id="combienDePlus" min="0" max="256" placeholder="Entrez un nombre">
     <button id="b1">Plus de rouge</button>
     <button id="b2">Moins de rouge</button>
     <button id="b3">Plus de vert</button>
@@ -16,5 +18,7 @@
     <button id="b5">Plus de bleu</button>
     <button id="b6">Moins de bleu</button>
     <button id="hazard">Hasard</button>
+    <button id="affichRgb" class="affichRgb"></button>
+</div>
 </body>
 </html>
