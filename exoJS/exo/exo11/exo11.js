@@ -23,7 +23,6 @@ function traitementAI() {
     nbrRandomAI = getRandomIntInclusive(min, max);
 
 
-
     while (!(nbrUserValue == nbrRandomAI)) {
         nbrRandomAI = getRandomIntInclusive(min, max);
         affichageResultat();
@@ -47,4 +46,5 @@ function traitementAI() {
                 affichResult.innerHTML = "Le nombre est plus petit";
             max = nbrRandomAI;
             }
+
   }
