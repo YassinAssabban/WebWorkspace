@@ -2,7 +2,7 @@
 
 body
 {
-	background-color: #cd6c6c;
+	background-color: #302d2d;
 	/* #58714f */
 	/* #545853 */
 	/* #143123 */
@@ -26,7 +26,7 @@ html, body
 									/* DEBUT LISERE */
 div.lisere
 {
-	background-color: #b93138;
+	background-color: #b5999a;
 	width: 100%;
 	height: 75px;
 }
@@ -59,7 +59,7 @@ div.lisere
 }
 .navbar {
   overflow: hidden;
-  background-color: #8e292c; 
+  background-color: #46292a; 
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -91,7 +91,7 @@ button.menubtn {
 
 
 .navbar a:hover, .dropdown:hover .dropbtn {
-  background-color: #f07074;
+  background-color: #302d2d;
   color: white;
 }
 
@@ -154,31 +154,6 @@ button.menubtn {
 }
                                          /* FIN NAV */
 
-/* search */
-.search-container {
-  float: right;
-}
-
-input[type=text] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
-}
-.search-container button {
-  float: right;
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-right: 16px;
-  background: #ddd;
-  font-size: 17px;
-  border: none;
-  cursor: pointer;
-}
-
-.search-container button:hover {
-  background: #ccc;
-}
 
 /* fin search */
 .connect

@@ -1,6 +1,6 @@
 <header>
     <div class="lisere">
-        <a href="index.php"><img src="logoNDRA.png" class="logolis"></a>
+        <a href="index.php"><img src="cosaNostraNavbar.png" class="logolis"></a>
     </div>
     <nav>
         <form action="article.php" method="POST">
@@ -10,7 +10,6 @@
                 <a href="drogues.php">Drogues</a>
                 <a href="voitures.php">Voitures</a>
                 <a href="stockages.php">Stockages</a>
-            </div>
             <?php
             if (empty($_SESSION['userName'])) {
                 echo "<div class=\"connect\"><a href=\"signUp.php\">Sign Up</a></div>";
