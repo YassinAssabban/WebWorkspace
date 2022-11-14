@@ -1,12 +1,12 @@
 
 
-// function getRandomIntInclusive(min, max) {
-//     min = Math.ceil(min);
-//     max = Math.floor(max);
-//     return Math.floor(Math.random() * (max - min +1)) + min;
-//   }
+function getRandomIntInclusive(min, max) {
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min +1)) + min;
+  }
 
-let nbrRandom = Math.random(1, 1000);
+let nbrRandom = getRandomIntInclusive(1, 1000);
 let nbrUserPointer = document.querySelector("#nbrUser");
 nbrUserPointer.addEventListener('change', function () {
     nbrUserValue = nbrUserPointer.value;

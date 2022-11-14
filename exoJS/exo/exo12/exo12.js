@@ -23,8 +23,18 @@ btn.appendChild(textButton);
 
 recupBody.style.backgroundColor = "grey";
 
-btn.addEventListener("click", function(){
-    recupBody.removeChild(p1);
-    recupBody.appendChild(aLink);
+let ifReverse = true;
 
+btn.addEventListener("click", function(){
+    if (ifReverse) {
+        recupBody.replaceChild(p2, p1);
+        recupBody.appendChild(p1);
+        recupBody.appendChild(btn);
+        ifReverse = false;
+    } else {
+        recupBody.replaceChild(p1, p2);
+        recupBody.appendChild(p2);
+        recupBody.appendChild(btn);
+        ifReverse = true;
+    } 
 });

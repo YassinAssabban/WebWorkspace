@@ -107,17 +107,3 @@ function hazardColor() {
     bodyStyle.style.backgroundColor = 'rgb(' + currentColorForRed + ', ' + currentColorForGreen + ', ' + currentColorForBlue + ' )';
     AffichRgb();
 }
-
-
-// function ChangeColor() {
-
-//     switch (key) {
-//         case value:
-            
-//             break;
-    
-//         default:
-//             break;
-//     }
-    
-// }
