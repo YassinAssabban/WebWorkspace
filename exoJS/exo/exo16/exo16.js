@@ -1,0 +1,1 @@
+let recupBody = document.querySelector("body");
