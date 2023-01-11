@@ -23,7 +23,7 @@
                 <input type="text" name="age" class="demo-form-field" required />
             </div>
             <div class="demo-form-row">
-                <input name="add_record" type="submit" value="Add" class="demo-form-submit">
+                <input name="add_record" type="submit" value="Ajouter" class="demo-form-submit">
             </div>
         </form>
     </div>

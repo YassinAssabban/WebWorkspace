@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="..\superfighter\style\style.css">
+    <link rel="stylesheet" href="style\style.css">
     <title>Home : Selectionner un joueur</title>
 </head>
 
 <body>
 <?php require "viewNavbar.php";  ?>
-    <form method="post" action="index.php">
+<img src="crud-icon\homepage.jpg" width="100%">
+    <!-- <form method="post" action="index.php">
+        
         <table class="tbl-qa">
             <thead>
-                <tr>
+                <tr> 
                     <th class="table-header" width="10%">ID</th>
                     <th class="table-header" width="20%">Pseudo</th>
                     <th class="table-header" width="10%">Points de vie</th>
                 </tr>
             </thead>
             <tbody id="table-body">
-                <?php
+                
+                  <?php
                 if (!empty($result)) {
                     foreach ($result as $key => $row) {
                 ?>
@@ -32,11 +35,12 @@
                         </tr>
                 <?php
                     }
-                }
-                ?>
+                } 
+                ?> 
             </tbody>
-        </table>
+        </table> 
     </form>
     <div class="div"><a href="index.php?createPersonnage=ajouter" class="button_link"><img src="crud-icon/add.png" title="Ajouter un nouveau personnage" style="vertical-align:bottom;" /> Créer</a></div>
+-->
 </body>
 </html2>

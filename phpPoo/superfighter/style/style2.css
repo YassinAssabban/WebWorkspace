@@ -1,23 +1,11 @@
+.div{
+    text-align:right;
+    margin:20px 0px;
+}
 body{
-    padding: 0;
-    margin: 0;
+    font-family:arial;
+    letter-spacing:1px;
 }
-
-.navbar{
-    display: flex;
-    width: 100%;
-    height: 50px;
-    background-color: gray;
-    align-items: center;
-}
-
-.navbar-title{
-    position: relative;
-    float: left;
-    margin-left: 5%;
-    color: aliceblue;
-}
-
 .button_link {
     color:#FFF;
      text-decoration:none;
@@ -30,7 +18,7 @@ body{
 }
 .demo-form-heading {
     margin-top:0px;font-weight: 500;
-}
+}	
 .demo-form-row{
     margin-top:20px;
 }

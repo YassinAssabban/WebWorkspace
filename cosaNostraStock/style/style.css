@@ -2,20 +2,26 @@ body{
     padding: 0;
     margin: 0;
 }
-
 .navbar{
     display: flex;
     width: 100%;
     height: 50px;
-    background-color: gray;
+    /* background-color: grey; */
     align-items: center;
+    flex-direction: row;
+    align-content: space-between;
+    position: absolute;
 }
 
-.navbar-title{
-    position: relative;
+.pos-logo-navbar{
+    width: 15%;
     float: left;
-    margin-left: 5%;
-    color: aliceblue;
+    margin-left: 10%;
+}
+
+.model{
+    padding: 2%;
+    color: black;
 }
 
 .button_link {
@@ -29,7 +35,8 @@ body{
     padding: 30px;
 }
 .demo-form-heading {
-    margin-top:0px;font-weight: 500;
+    margin-top:0px;
+    font-weight: 500;
 }
 .demo-form-row{
     margin-top:20px;
