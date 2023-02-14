@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1386189390 source:c:\users\olivier\workspace\c\calculatrice\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+
+1422543499 source:c:\users\olivier\google drive\projet_c\fiches\fiche_decouper_projet\calculatrice\main.c
+	<stdio.h>
+	<stdlib.h>
+	<ctype.h>
+

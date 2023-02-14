@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "calc.h": "c",
+        "pile.h": "c",
+        "unity.h": "c"
+    }
+}

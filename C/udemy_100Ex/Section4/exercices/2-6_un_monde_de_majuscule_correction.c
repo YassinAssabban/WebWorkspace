@@ -1,0 +1,1 @@
+#include <stdio.h>#include <stdlib.h>int main(){    char lettre;    const int DECALAGE_MAJ_MIN = 'A'-'a';    // Lecture de la saisie utilisateur    printf("Entrez une lettre en minuscule: ");    scanf("%c", &lettre);    // Affichage du resultat    printf("Cela donne en majuscule: %c\n", (lettre + DECALAGE_MAJ_MIN));    return 0;}

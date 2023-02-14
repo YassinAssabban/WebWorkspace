@@ -1,0 +1,71 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "type": "cppbuild",
+      "label": "Compiler projet",
+      "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "main.c",
+        "..\\includes\\*.c",
+        "-o",
+        "${workspaceFolder}\\main.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "type": "cppbuild",
+      "label": "Compiler tests",
+      "command": "C:\\msys64\\mingw64\\bin\\gcc.exe",
+      "args": [
+        "-fdiagnostics-color=always",
+        "-g",
+        "test_calculateur.c",
+        "..\\unity\\*.c",
+        "..\\includes\\*.c",
+        "-o",
+        "${workspaceFolder}\\test_calculateur.exe"
+      ],
+      "options": {
+        "cwd": "${fileDirname}"
+      },
+      "problemMatcher": [
+        "$gcc"
+      ],
+      "group": "build"
+    },
+		{
+			"type": "process",
+			"label": "Executer le projet",
+			"command": "main.exe",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "test",
+			"problemMatcher": []
+		},
+		{
+			"type": "process",
+			"label": "Executer les tests",
+			"command": "test_calculateur.exe",
+			"args": [],
+			"options": {
+				"cwd": "${workspaceFolder}"
+			},
+			"group": "test",
+			"problemMatcher": []
+		}
+  ]
+}

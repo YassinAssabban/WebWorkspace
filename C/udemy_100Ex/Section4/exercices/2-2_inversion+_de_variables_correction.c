@@ -1,0 +1,1 @@
+#include <stdio.h>#include <stdlib.h>int main(){    int var1 = 123;    int var2 = 18;    // Affichage de l'etat initial    printf("var1= %d et var2= %d\n", var1, var2);    //Inversion du contenu des deux variables    int tmp = var1;    var1 = var2;    var2 = tmp;    // Affichage du resultat    printf("var1= %d et var2= %d\n", var1, var2);    return 0;}
