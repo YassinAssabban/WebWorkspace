@@ -17,8 +17,9 @@ function getXHR() {
     return null;
   }
 }
+
+const buttonEl = document.getElementById("sendButton");
 window.onload = () => {
-  const buttonEl = document.getElementById("sendButton");
   const resultEl = document.getElementById("result");
   buttonEl.onclick = () => {
     buttonEl.disabled = "disabled";

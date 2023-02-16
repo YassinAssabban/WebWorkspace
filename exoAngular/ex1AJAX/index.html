@@ -8,13 +8,20 @@
     <title>Fiche 1 AJAX</title>
 </head>
 <body>
-    <label>Note : </label>
-    <select id="note" name="note">
-        <option value="1">1</option>
+    <form method="get" action="./traitement.php">
+
+        <label>Note : </label>
+        <select id="note" name="note">
+            <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
             <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10=">10</option>
         </select><br>
         <input type="radio" id="xml" name="outputRes" value="xml">
         <label>XML</label>
@@ -22,6 +29,7 @@
         <label>JSON</label>
         <br><button id="sendButton">Envoyez</button>
         <p id="result"></p>
+    </form>
         <script src="trt.js" defer></script>
     </body>
 </html>
