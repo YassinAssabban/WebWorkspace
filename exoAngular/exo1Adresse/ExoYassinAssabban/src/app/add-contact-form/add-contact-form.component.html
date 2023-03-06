@@ -1,0 +1,35 @@
+<div class="container">
+  <form>
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">Prénom</label>
+      <input type="text" class="form-control" aria-describedby="emailHelp" [(ngModel)]="userToAdd.firstname" name="firstname">
+      <div  class="form-text">Entrez ici votre sublime prénom.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Nom</label>
+      <input type="text" class="form-control" [(ngModel)]="userToAdd.name" name="name">
+      <div class="form-text">Entrez ici votre magnifique nom.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Email</label>
+      <input type="text" class="form-control" [(ngModel)]="userToAdd.email" name="email">
+      <div class="form-text">Entrez ici votre email.</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Téléphone</label>
+      <input type="text" class="form-control" [(ngModel)]="userToAdd.phone" name="phone">
+      <div class="form-text">Entrez ici votre numéro de compte bancaire (Ceci est une boutade)</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Date de naissance</label>
+      <input type="text" class="form-control" [(ngModel)]="userToAdd.dateBorn" name="dateBorn">
+      <div class="form-text">Entrez ici votre code de carte (Ceci est toujours une boutade)</div>
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">Photo</label>
+      <input type="text" class="form-control" [(ngModel)]="userToAdd.photo" name="photo">
+      <div class="form-text">Entrez une photo au format (https://imgur...)</div>
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="addUser()">Ajouter</button>
+  </form>
+</div>

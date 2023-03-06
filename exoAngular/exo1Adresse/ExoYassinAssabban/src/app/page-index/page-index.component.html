@@ -1,0 +1,6 @@
+<app-title></app-title>
+<div class="container" *ngIf="!showForm">
+  <button (click)="ButtonClicked()" type="button" class="btn btn-primary">Ajouter un nouveau contact</button>
+</div>
+<app-adress-notepad *ngIf="!showForm" (saveEvent)="addNewUser($event)"></app-adress-notepad>
+<app-add-contact-form *ngIf="showForm"></app-add-contact-form>
