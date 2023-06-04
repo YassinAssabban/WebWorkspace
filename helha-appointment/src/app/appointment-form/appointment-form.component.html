@@ -1,0 +1,30 @@
+<div class="m-5">
+  <div class="mb-3">
+    <label for="nom" class="form-label">Nom</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nom"
+      [(ngModel)]="newAppointment.nom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="prenom" class="form-label">Prénom</label>
+    <input
+      type="text"
+      class="form-control"
+      id="prenom"
+      [(ngModel)]="newAppointment.prenom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="startDate" class="form-label">Date du rendez-vous</label>
+    <input
+      type="datetime-local"
+      class="form-control"
+      id="startDate"
+      [(ngModel)]="newAppointment.startDate"
+    />
+  </div>
+  <button class="btn btn-primary" (click)="onSubmit()">Enregistrer</button>
+</div>

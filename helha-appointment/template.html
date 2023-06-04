@@ -1,0 +1,67 @@
+<!-- HEADER -->
+<header class="pb-3 mb-4 border-bottom">
+  <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+    <span class="fs-4" style="margin-left: 10px;">helha Appointment</span>
+  </a>
+</header>
+
+<!-- HOMEPAGE -->
+<div class="container">
+  <div class="row align-items-md-stretch">
+    <div class="col-md-6">
+      <div class="h-100 p-5 text-white bg-dark rounded-3 vertical-center">
+        <div class="row">
+          <h2>Prendre un rendez-vous</h2>
+        </div>
+        <div style="flex-basis: 100%; height: 0;"></div>
+        <div class="row">
+          <i class="fa-solid fa-calendar-plus fa-10x"></i>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="h-100 p-5 bg-light border rounded-3 vertical-center">
+        <h2>Visualiser les rendez-vous</h2>
+        <div style="flex-basis: 100%; height: 0;"></div>
+        <i class="fa-solid fa-calendar-check fa-10x"></i>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- APPOINTEMENT FORM -->
+<div class="m-5">
+  <div class="mb-3">
+    <label for="nom" class="form-label">Nom</label>
+    <input
+      type="text"
+      class="form-control"
+      id="nom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="prenom" class="form-label">Prénom</label>
+    <input
+      type="text"
+      class="form-control"
+      id="prenom"
+    />
+  </div>
+  <div class="mb-3">
+    <label for="startDate" class="form-label">Date du rendez-vous</label>
+    <input
+      type="datetime-local"
+      class="form-control"
+      id="startDate"
+    />
+  </div>
+  <button class="btn btn-primary">Enregistrer</button>
+</div>
+
+
+<!-- APPOINTEMENT CALENDAR -->
+<div class="container">
+  <div style="height:750px;">
+    <full-calendar [options]="calendarOptions"></full-calendar>
+  </div>
+</div>
