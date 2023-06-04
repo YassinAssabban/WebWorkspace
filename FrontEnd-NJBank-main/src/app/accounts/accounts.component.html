@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="col-12 lg:col-10 lg:col-offset-1 mt-6">
+        <p-button label="Ajouter un compte" routerLink="/account-add" styleClass="p-button-sm" icon="pi pi-plus"></p-button>
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-table [value]="accounts$" styleClass="mt-3">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Compte</th>
+                    <th>Solde</th>
+                    <th>Suppression</th>
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" let-account>
+                <tr>
+                    <td>{{ account.user.prenom }}</td>
+                    <td>{{ account.user.nom }}</td>
+                    <td>{{ account.numero }}</td>
+                    <td>{{ account.solde }} €</td>
+                    <td>
+                        <p-button styleClass="p-button-danger " icon="pi pi-trash" (click)="deleteAccount(account.id)"></p-button>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

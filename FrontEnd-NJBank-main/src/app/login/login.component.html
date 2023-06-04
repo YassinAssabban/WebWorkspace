@@ -1,0 +1,20 @@
+<div class="grid">
+    <div class="col-12 lg:col-4 lg:col-offset-4 mt-7">
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-card header="Connexion" styleClass="text-center mt-3">
+            <p>Connecter-vous afin d'avoir accès au panel d'administration de la banque vous permettant de faire diverses tâches.</p>
+
+            <span class="p-float-label mt-5">
+                <input id="email" class="w-full" type="email" [(ngModel)]="email" pInputText required> 
+                <label for="email">Email</label>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="password" class="w-full" type="password" [feedback]="false" [(ngModel)]="password" pPassword required> 
+                <label for="password">Mot de passe</label>
+            </span>
+
+            <p-button label="Se connecter" icon="pi pi-sign-in" iconPos="right" styleClass="mt-5 w-full" (click)="connect()"></p-button>
+        </p-card>
+    </div>
+</div>

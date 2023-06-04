@@ -1,0 +1,37 @@
+/* {
+  padding: 0;
+  margin: 0;
+} */
+body{
+  background-image: url('src\assets\Simple Shiny.svg');
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.modifmenubar .p-menubar{
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.modifmenubar .p-menuitem-text, .p-menuitem-icon{
+  color: white !important;
+
+}
+
+/* .p-menuitem:hover, .p-menuitem-link:hover{
+  background: #009790 !important;
+  border-radius: 10px !important;
+} */
+
+.modifmenubar .p-menuitem-link:hover{
+  background: #009790 !important;
+  border-radius: 10px !important;
+}
+
+.modifmenubar .p-splitbutton .p-tieredmenu.p-tieredmenu-overlay{
+  background-color: rgb(99,115,138) !important;
+}
+
+.modifmenubar .p-tieredmenu.p-tieredmenu-overlay .p-menuitem-link:hover{
+  background-color: #424D58 !important;
+}

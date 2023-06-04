@@ -1,0 +1,27 @@
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="col-12 lg:col-10 lg:col-offset-1 mt-6">
+        <p-button label="Faire un virement" routerLink="/treatment-add" styleClass="p-button-sm" icon="pi pi-plus"></p-button>
+
+        <p-table [value]="crossed" styleClass="mt-5">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Expéditeur</th>
+                    <th>Destinataire</th>
+                    <th>Montant</th>
+                    <th>Date</th>
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" let-crossed>
+                <tr>
+                    <td>{{ crossed.accountSrc.user.prenom }}</td>
+                    <td>{{ crossed.accountDst.user.prenom }}</td>
+                    <td>{{ crossed.treatment.montant }} €</td>
+                    <td>{{ crossed.treatment.dateHeure | date: 'dd/MM/Y HH:mm' }}</td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

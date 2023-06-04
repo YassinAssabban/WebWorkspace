@@ -1,0 +1,9 @@
+<div class="face-snap-card" [ngClass]="{ snapped: buttonText === 'Oops, un Snap!'}">
+  <!-- <p>{{ 344.36 | currency: 'EUR' : 'code' }}</p>
+  <p>{{0.336 | percent: '1.0-1'}}</p>
+  <p>{{4346234.4 | number: '1.0-1'}}</p> -->
+  <h2>{{ faceSnap.title | titlecase }}</h2>
+  <!-- <p>Mis en ligne {{ faceSnap.createdDate | date: ' le d MMMM yyyy, à HH:mm'}}</p> -->
+  <p>{{ faceSnap.description }}</p>
+  <button (click)="onViewFaceSnap()">VIEW</button>
+</div>

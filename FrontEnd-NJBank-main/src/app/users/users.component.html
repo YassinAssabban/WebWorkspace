@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="col-12 lg:col-10 lg:col-offset-1 mt-6">
+        <p-button label="Ajouter un utilisateur" routerLink="/user-add" styleClass="p-button-sm" icon="pi pi-plus"></p-button>
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-table [value]="users$" styleClass="mt-3">
+            <ng-template pTemplate="header">
+                <tr>
+                    <th>Prénom</th>
+                    <th>Nom</th>
+                    <th>Mail</th>
+                    <th>Role</th>
+                    <th>Actions</th>
+                </tr>
+            </ng-template>
+
+            <ng-template pTemplate="body" let-user>
+                <tr>
+                    <td>{{ user.prenom }}</td>
+                    <td>{{ user.nom }}</td>
+                    <td>{{ user.email }}</td>
+                    <td *ngIf="user.role === '1'">Administrateur</td>
+                    <td *ngIf="user.role === '2'">Utilisateur</td>
+                    <td>
+                        <p-splitButton label="Action" icon="pi pi-check" styleClass="p-button-sm" [model]="dropdownItems" (click)="selectUser(user)"></p-splitButton>
+                    </td>
+                </tr>
+            </ng-template>
+        </p-table>
+    </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container py-3">
+  <app-header></app-header>
+  <app-menu-bar (addNewContact)="switchView(false)"></app-menu-bar>
+  <main class="p-2">
+    <div class="row">
+      <div class="col-12" #contactList>
+        <app-contact-list *ngIf="isTableView"></app-contact-list>
+        <app-contact-form
+          *ngIf="!isTableView"
+          (newContactSaved)="switchView(true)"
+        ></app-contact-form>
+      </div>
+    </div>
+  </main>
+</div>

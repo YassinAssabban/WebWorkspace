@@ -1,0 +1,55 @@
+<div class="w-full flex justify-content-center mt-8">
+<div class="card col-5 border-1 p-4 border-teal-500">
+  <div class="formgrid grid">
+       <!-- input prénom -->
+      <div class="field col">
+          <label for="firstname">Prénom</label>
+          <input id="firstname" placeholder="Prénom" [(ngModel)]="newUser.firstname" type="text" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+       <!-- input nom -->
+      <div class="field col">
+          <label for="lastname">Nom</label>
+          <input id="lastname" type="text" placeholder="Nom" [(ngModel)]="newUser.lastname" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+  </div>
+  <div class="formgrid grid">
+      <!--  input matricule -->
+      <div class="field col">
+          <label for="matricule">Matricule</label>
+          <input id="matricule" type="text" placeholder="Matricule" [(ngModel)]="newUser.matricule" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+      <!--  input section -->
+      <div class="field col">
+          <label for="section" class="w-full">Section</label>
+          <p-dropdown [options]="sections" placeholder="Votre section" [(ngModel)]="newUser.section" class="text-base text-color appearance-none outline-none text-base focus:border-primary w-full"></p-dropdown>
+      </div>
+  </div>
+  <!--  input email -->
+  <div class="field">
+    <label for="email">Email</label>
+    <input id="email" type="email" [(ngModel)]="newUser.email" placeholder="Entrez votre email" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+</div>
+
+   <div class="formgrid grid">
+      <!--  input mdp -->
+      <div class="field col">
+          <label for="password">Mot de passe</label>
+          <input id="password" type="password" [(ngModel)]="newUser.password" placeholder="Entrez votre mot de passe" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+       <!-- input mdp repeat -->
+      <div class="field col">
+          <label for="passwordrepeat">Répéter mot de passe</label>
+          <input id="passwordrepeat" placeholder="Répéter votre mot de passe" type="password" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full">
+      </div>
+  </div>
+  <div>
+    <span class="error">{{ errorMsg }}</span>
+  </div>
+  <button
+    class="btn btn-lg btn-primary btn-block"
+    (click)="AddUser()"
+  >
+    Se connecter
+  </button>
+</div>
+</div>

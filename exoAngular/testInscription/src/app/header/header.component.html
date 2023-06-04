@@ -1,0 +1,21 @@
+<!-- <header>
+  <div class="card flex flex-wrap gap-7 align-content-center align-items-center">
+      <img src="./assets/LOGO_HELHa.png" height="60"/>
+
+        <p-button class="bouttonNavbar" label="Créer une équation de recherche" styleClass="p-button-rounded bg-teal-600 hover:bg-teal-900 border-transparent"></p-button>
+        <p-button label="Comment l'utiliser" styleClass="p-button-rounded bg-teal-600 hover:bg-teal-900 border-transparent"></p-button>
+        <p-button label="Qu'est ce que Pico ?" styleClass="p-button-rounded bg-teal-600 hover:bg-teal-900 border-transparent"></p-button>
+        <p-splitButton class="connexionBtn" label="Connexion" styleClass="p-button-secondary p-button-rounded" [model]="itemsButton"></p-splitButton>
+  </div>
+</header>
+ -->
+ <div class="modifmenubar">
+ <p-menubar [model]="items">
+  <ng-template pTemplate="start">
+      <img src="./assets/LOGO_HELHa.png" height="40" class="mr-2" />
+  </ng-template>
+  <ng-template pTemplate="end">
+    <p-splitButton  label="Connexion" styleClass="p-button-secondary p-button-rounded mr-4" [model]="itemsButton"></p-splitButton>
+  </ng-template>
+</p-menubar>
+</div>

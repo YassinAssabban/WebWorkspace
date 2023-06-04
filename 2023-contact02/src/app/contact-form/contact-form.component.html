@@ -1,0 +1,65 @@
+<fieldset>
+  <legend>Ajouter un nouveau contact</legend>
+  <div class="row g-3">
+    <div class="col-12">
+      <label for="lastname" class="form-label">Nom</label>
+      <input
+        type="text"
+        class="form-control"
+        id="lastname"
+        [(ngModel)]="newContact.lastname"
+      />
+    </div>
+    <div class="col-12">
+      <label for="firstname" class="form-label">Prénon</label>
+      <input
+        type="text"
+        class="form-control"
+        id="firstname"
+        [(ngModel)]="newContact.firstname"
+      />
+    </div>
+    <div class="col-12">
+      <label for="email" class="form-label">Email</label>
+      <input
+        type="email"
+        class="form-control"
+        id="email"
+        [(ngModel)]="newContact.email"
+      />
+    </div>
+    <div class="col-12">
+      <label for="phone" class="form-label">Téléphone</label>
+      <input
+        type="text"
+        class="form-control"
+        id="phone"
+        [(ngModel)]="newContact.phone"
+      />
+    </div>
+    <div class="col-12">
+      <label for="birthdate" class="form-label">Date de naissance</label>
+      <input
+        type="date"
+        class="form-control"
+        id="birthdate"
+        [(ngModel)]="newContact.birthdate"
+      />
+    </div>
+    <div class="col-12">
+      <label for="photo" class="form-label">Photo</label>
+      <input
+        type="text"
+        class="form-control"
+        id="photo"
+        [(ngModel)]="newContact.photo"
+      />
+    </div>
+
+    <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+      <button type="submit" class="btn btn-primary" (click)="saveNewContact()">
+        Enregistrer
+      </button>
+    </div>
+  </div>
+</fieldset>

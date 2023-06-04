@@ -1,0 +1,26 @@
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="col-12 lg:col-6 lg:col-offset-3 mt-5">
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-card header="Ajouter un compte" styleClass="text-center mt-3">
+            <p>Veuillez remplir toutes les informations requises afin de pouvoir ajouter un compte</p>
+
+            <span class="p-float-label mt-5">
+                <p-dropdown [options]="users" [(ngModel)]="newAccount.userId" optionLabel="fullname" optionValue="userId" placeholder="Selectionner un utilisateur" styleClass="w-full text-left"></p-dropdown>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="compte" class="w-full" type="compte" [(ngModel)]="newAccount.numero" pInputText required> 
+                <label for="compte">Numéro de compte</label>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="solde" class="w-full" type="solde" [(ngModel)]="newAccount.solde" pInputText required> 
+                <label for="solde">Solde</label>
+            </span>
+
+            <p-button (click)="addAccount()" label="Ajouter" icon="pi pi-plus" iconPos="right" styleClass="mt-5 w-full"></p-button>
+        </p-card>
+    </div>
+</div>

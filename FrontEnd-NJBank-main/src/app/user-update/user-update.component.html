@@ -1,0 +1,36 @@
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="col-12 lg:col-6 lg:col-offset-3 mt-5">
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-card header="Modifier un utilisateur" styleClass="text-center mt-3">
+            <p>Veuillez remplir toutes les informations requis afin de pouvoir modifier l'utilisateur</p>
+
+            <span class="p-float-label mt-5">
+                <input id="firstname" class="w-full" type="firstname" [(ngModel)]="updatedUser.prenom" pInputText required> 
+                <label for="firstname">Prenom</label>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="lastname" class="w-full" type="lastname" [(ngModel)]="updatedUser.nom" pInputText required> 
+                <label for="lastname">Nom</label>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="email" class="w-full" type="email" [(ngModel)]="updatedUser.email" pInputText required> 
+                <label for="email">Email</label>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="password" class="w-full" type="password" [feedback]="false" [(ngModel)]="updatedUser.password" pPassword required> 
+                <label for="password">Mot de passe</label>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <p-dropdown [options]="roles" [(ngModel)]="updatedUser.role" optionLabel="name" optionValue="value" placeholder="Selectionner un rôle" styleClass="w-full text-left"></p-dropdown>
+            </span>
+
+            <p-button (click)="updateUser()" label="Modifier" icon="pi pi-pencil" iconPos="right" styleClass="mt-5 w-full p-button-warning"></p-button>
+        </p-card>
+    </div>
+</div>

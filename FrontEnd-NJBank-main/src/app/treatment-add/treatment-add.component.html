@@ -1,0 +1,43 @@
+<app-navbar></app-navbar>
+
+<div class="grid">
+    <div class="col-12 lg:col-6 lg:col-offset-3 mt-5" *ngIf="userRole == '1'">
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-card header="Faire un virement" styleClass="text-center mt-3">
+            <p>Veuillez remplir toutes les informations requises afin de pouvoir faire un virement</p>
+
+            <span class="p-float-label mt-5">
+                <p-dropdown [options]="users" [(ngModel)]="srcUserId" (onChange)="fillSrc()" optionLabel="fullname" optionValue="userId" placeholder="Selectionner un utilisateur source" styleClass="w-full text-left"></p-dropdown>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <p-dropdown [options]="users" [(ngModel)]="dstUserId" (onChange)="fillDst()" optionLabel="fullname" optionValue="userId" placeholder="Selectionner un utilisateur destination" styleClass="w-full text-left"></p-dropdown>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="montant" class="w-full" type="montant" [(ngModel)]="newTreatment.montant" pInputText required> 
+                <label for="montant">Montant</label>
+            </span>
+
+            <p-button (click)="addTreatment()" label="Ajouter" icon="pi pi-plus" iconPos="right" styleClass="mt-5 w-full"></p-button>
+        </p-card>
+    </div>
+
+    <div class="col-12 lg:col-6 lg:col-offset-3 mt-5" *ngIf="userRole == '2'">
+        <p-messages [(value)]="errorMessage" [enableService]="false"></p-messages>
+        <p-card header="Faire un virement" styleClass="text-center mt-3">
+            <p>Veuillez remplir toutes les informations requises afin de pouvoir faire un virement</p>
+
+            <span class="p-float-label mt-5">
+                <p-dropdown [options]="users" [(ngModel)]="dstUserId" (onChange)="fillDst()" optionLabel="fullname" optionValue="userId" placeholder="Selectionner un utilisateur" styleClass="w-full text-left"></p-dropdown>
+            </span>
+
+            <span class="p-float-label mt-5">
+                <input id="montant" class="w-full" type="montant" [(ngModel)]="newTreatment.montant" pInputText required> 
+                <label for="montant">Montant</label>
+            </span>
+
+            <p-button (click)="addTreatment()" label="Ajouter" icon="pi pi-plus" iconPos="right" styleClass="mt-5 w-full"></p-button>
+        </p-card>
+    </div>
+</div>

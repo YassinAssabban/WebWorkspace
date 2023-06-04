@@ -1,0 +1,9 @@
+<p-menubar [model]="navbar">
+    <ng-template pTemplate="start">
+        <img src="https://picsum.photos/64/64" height="40" class="mr-2">
+    </ng-template>
+
+    <ng-template pTemplate="end">
+        <button pButton type="button" icon="pi pi-sign-out" label="Déconnexion" (click)="logout()" class="p-button-danger p-button-sm"></button>
+    </ng-template>
+</p-menubar>
